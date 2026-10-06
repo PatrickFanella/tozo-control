@@ -1,0 +1,8 @@
+[tasks.test]
+description = "Test the HT3 protocol and validate the Omarchy plugin"
+run = ["/usr/bin/python3 -m unittest discover -s tests -v", "omarchy plugin validate omarchy-ht3", "qmllint -I /usr/share/omarchy/shell omarchy-ht3/Widget.qml"]
+
+[tasks.install]
+description = "Install the HT3 widget in the Omarchy top bar"
+depends = ["test"]
+run = "/usr/bin/python3 install-plugin.py"

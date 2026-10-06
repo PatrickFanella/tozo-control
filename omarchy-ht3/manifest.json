@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "patrickfanella.ht3",
+  "name": "TOZO HT3",
+  "version": "0.1.0",
+  "author": "Patrick Fanella",
+  "description": "HT3 headphone volume, hardware EQ, ANC and transparency",
+  "kinds": ["bar-widget"],
+  "entryPoints": {"barWidget": "Widget.qml"},
+  "barWidget": {
+    "displayName": "TOZO HT3",
+    "description": "Headphone controls",
+    "category": "Audio",
+    "defaultSection": "right",
+    "allowMultiple": false
+  }
+}

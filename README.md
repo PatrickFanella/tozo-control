@@ -1,5 +1,19 @@
 # TOZO Control
 
+## Omarchy HT3 plugin
+
+This checkout also includes a native Omarchy Shell / Quickshell top-bar plugin
+for TOZO HT3 headphones: volume, hardware EQ, ANC and transparency.
+See [the plugin guide](omarchy-ht3/README.md) for usage and protocol evidence.
+
+```bash
+mise run test
+mise run install
+```
+
+The plugin uses Python's standard library and Bluetooth Classic RFCOMM; the
+GTK/Bleak setup below is for the original standalone application only.
+
 A Linux GTK4 app to control TOZO earbuds via BLE — no Android app needed.
 
 Um app GTK4 para Linux para controlar fones TOZO via BLE — sem precisar do app Android.
